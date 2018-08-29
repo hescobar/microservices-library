@@ -1,4 +1,4 @@
-package book;
+package fr.hugoescobar.library.client.book.test;
 
 
 import static org.assertj.core.api.BDDAssertions.*;

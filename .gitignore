@@ -32,3 +32,10 @@ Servers
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Generated #
+library-client-book/.classpath
+library-client-book/.settings/org.eclipse.jdt.core.prefs
+library-client-book/.springBeans
+library-service/.classpath
+library-service/.settings/org.eclipse.jdt.core.prefs
