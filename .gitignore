@@ -38,4 +38,4 @@ library-client-book/.classpath
 library-client-book/.settings/org.eclipse.jdt.core.prefs
 library-client-book/.springBeans
 library-service/.classpath
-library-service/.settings/org.eclipse.jdt.core.prefs
+**/.settings/*
