@@ -34,8 +34,8 @@ Servers
 hs_err_pid*
 
 # Generated #
-library-client-book/.classpath
-library-client-book/.settings/org.eclipse.jdt.core.prefs
-library-client-book/.springBeans
-library-service/.classpath
-**/.settings/*
+*/.classpath
+*/.settings
+*/.project
+*/bin
+*/.springBeans
