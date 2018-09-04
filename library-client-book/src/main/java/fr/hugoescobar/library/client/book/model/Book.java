@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -25,6 +27,7 @@ public class Book implements Serializable {
 	private String authorName;
 	
 	@Column(name = "genre")
+	@Enumerated(EnumType.STRING)
 	private Genre genre;
 
 	protected Book() {
@@ -38,6 +41,6 @@ public class Book implements Serializable {
 
 	@Override
 	public String toString() {
-		return String.format("Book[id=%d, name='%s', idAuthor='%s', genre='%s']", id, name, authorName, genre.toString());
+		return String.format("Book[id=%d, name='%s', author_name='%s', genre='%s']", id, name, authorName, genre.toString());
 	}
 }

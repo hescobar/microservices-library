@@ -5,11 +5,13 @@ import java.util.Arrays;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import fr.hugoescobar.library.client.book.model.Book;
 import fr.hugoescobar.library.client.book.model.Genre;
 import fr.hugoescobar.library.client.book.repository.BookRepository;
 
+@RestController
 public class BookRestController {
 
 	@Autowired
@@ -23,7 +25,7 @@ public class BookRestController {
 		// save a list of Customers
 		repository.saveAll(Arrays.asList(new Book("Dune", "Frank Herbert", Genre.SCIFI),
 				new Book("Hamlet", "William Shakespeare", Genre.DRAMA),
-				new Book("Orgueil & Préjugés", "Jane Austen", Genre.ROMANCE),
+				new Book("Fifty Shades of Grey", "E. L. James", Genre.ROMANCE),
 				new Book("Da Vinci Code", "Dan Brown", Genre.THRILLER)));
 
 		return "Done";
@@ -36,7 +38,6 @@ public class BookRestController {
 		for(Book book : repository.findAll()){
 			result += book.toString() + "<br>";
 		}
-		
 		return result;
 	}
 	
