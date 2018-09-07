@@ -41,6 +41,6 @@ public class Book implements Serializable {
 
 	@Override
 	public String toString() {
-		return String.format("Book[id=%d, name='%s', author_name='%s', genre='%s']", id, name, authorName, genre.toString());
+		return String.format("Book [id='%d', name='%s', author_name='%s', genre='%s']", id, name, authorName, genre.toString());
 	}
 }

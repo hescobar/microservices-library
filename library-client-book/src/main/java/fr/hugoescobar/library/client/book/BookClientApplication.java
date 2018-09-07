@@ -28,7 +28,7 @@ public class BookClientApplication implements CommandLineRunner {
     
 	@Override
 	public void run(String... arg0) throws Exception {
-		// clear all record if existed before do the tutorial with new data 
+		// reset database at application startup
 		repository.deleteAll();
 	}
 }
