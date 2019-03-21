@@ -36,14 +36,14 @@ public class BookRestController {
 		return result;
 	}
 
-	@RequestMapping("/find")
+	@RequestMapping("/find/id")
 	public String findById(@RequestParam("id") long id) {
 		String result = "";
 		result = repository.findById(id).toString();
 		return result;
 	}
 
-	@RequestMapping("/find")
+	@RequestMapping("/find/name")
 	public String findByName(@RequestParam("name") String name) {
 		String result = "";
 		for (Book book : repository.findByName(name)) {
